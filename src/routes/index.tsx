@@ -218,7 +218,7 @@ function Index() {
             >
               Quero minha vaga
             </a>
-          </div>
+          </div> 
         </div>
       </section>
 
