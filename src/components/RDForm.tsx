@@ -6,8 +6,8 @@ declare global {
   }
 }
 
-const FORM_ID = "ppa-2026-591c2d899a5f536bef03";
-const SCRIPT_SRC = "https://d335luupugsy2.cloudfront.net/js/rdstation-forms/stable/rdstation-forms.min.js";
+const FORM_ID = "#";
+const SCRIPT_SRC = "#";
 
 export function RDForm() {
   const mounted = useRef(false);
