@@ -1,5 +1,5 @@
-import { r as reactExports, T as jsxRuntimeExports, S as React, _ as React$1 } from "./worker-entry-BJQVHCxm.js";
-import "./router-CzVezc2J.js";
+import { r as reactExports, T as jsxRuntimeExports, S as React, _ as React$1 } from "./worker-entry--CmpZmic.js";
+import "./router-B9AKMIqA.js";
 import "node:events";
 import "node:async_hooks";
 import "node:stream/web";
@@ -13,7 +13,11 @@ function RDForm() {
     mounted.current = true;
     const init = () => {
       if (window.RDStationForms) {
-        new window.RDStationForms(FORM_ID, "UA-104096068-1").createForm();
+        try {
+          new window.RDStationForms(FORM_ID, "UA-104096068-1").createForm();
+        } catch (error) {
+          console.error("[v0] Erro ao carregar formulário RDStation:", error);
+        }
       }
     };
     const existing = document.querySelector(`script[src="${SCRIPT_SRC}"]`);
@@ -25,6 +29,9 @@ function RDForm() {
     script.src = SCRIPT_SRC;
     script.async = true;
     script.onload = init;
+    script.onerror = () => {
+      console.error("[v0] Erro ao carregar script do RDStation Forms");
+    };
     document.body.appendChild(script);
   }, []);
   return /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "rd-form-wrapper", role: "main", id: FORM_ID });

@@ -9,8 +9,8 @@
     "file": "assets/styles-B9Txd1_D.css",
     "src": "/vercel/share/v0-project/src/styles.css"
   },
-  "_worker-entry-BJQVHCxm.js": {
-    "file": "assets/worker-entry-BJQVHCxm.js",
+  "_worker-entry--CmpZmic.js": {
+    "file": "assets/worker-entry--CmpZmic.js",
     "name": "worker-entry",
     "dynamicImports": [
       "tanstack-start-manifest:v",
@@ -26,12 +26,12 @@
     "isDynamicEntry": true
   },
   "src/router.tsx": {
-    "file": "assets/router-CzVezc2J.js",
+    "file": "assets/router-B9AKMIqA.js",
     "name": "router",
     "src": "src/router.tsx",
     "isDynamicEntry": true,
     "imports": [
-      "_worker-entry-BJQVHCxm.js"
+      "_worker-entry--CmpZmic.js"
     ],
     "dynamicImports": [
       "src/routes/index.tsx?tsr-split=component"
@@ -41,17 +41,17 @@
     ]
   },
   "src/routes/index.tsx?tsr-split=component": {
-    "file": "assets/index-CcZ0kgv8.js",
+    "file": "assets/index-C3FzUfuV.js",
     "name": "index",
     "src": "src/routes/index.tsx?tsr-split=component",
     "isDynamicEntry": true,
     "imports": [
-      "_worker-entry-BJQVHCxm.js",
+      "_worker-entry--CmpZmic.js",
       "src/router.tsx"
     ]
   },
   "tanstack-start-manifest:v": {
-    "file": "assets/_tanstack-start-manifest_v-QV8Tda_p.js",
+    "file": "assets/_tanstack-start-manifest_v-Cbav0qLm.js",
     "name": "_tanstack-start-manifest_v",
     "src": "tanstack-start-manifest:v",
     "isDynamicEntry": true
@@ -62,7 +62,7 @@
     "src": "virtual:cloudflare/worker-entry",
     "isEntry": true,
     "imports": [
-      "_worker-entry-BJQVHCxm.js"
+      "_worker-entry--CmpZmic.js"
     ]
   }
 }
