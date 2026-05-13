@@ -7,10 +7,8 @@
 import { defineConfig } from "@lovable.dev/vite-tanstack-config";
 
 export default defineConfig({
-  vite: {
-    server: {
-      middlewareMode: false,
-      allowExternal: ['rd-station-forms'],
-    },
+  server: {
+    middlewareMode: false,
+    allowExternal: ['rd-station-forms'],
   },
 });
