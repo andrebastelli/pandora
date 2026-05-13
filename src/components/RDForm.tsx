@@ -18,7 +18,11 @@ export function RDForm() {
 
     const init = () => {
       if (window.RDStationForms) {
-        new window.RDStationForms(FORM_ID, "UA-104096068-1").createForm();
+        try {
+          new window.RDStationForms(FORM_ID, "UA-104096068-1").createForm();
+        } catch (error) {
+          console.error("[v0] Erro ao carregar formulário RDStation:", error);
+        }
       }
     };
 
@@ -31,6 +35,9 @@ export function RDForm() {
     script.src = SCRIPT_SRC;
     script.async = true;
     script.onload = init;
+    script.onerror = () => {
+      console.error("[v0] Erro ao carregar script do RDStation Forms");
+    };
     document.body.appendChild(script);
   }, []);
 
