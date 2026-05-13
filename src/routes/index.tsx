@@ -213,7 +213,7 @@ function Index() {
               participantes do Portas Abertas.
             </p>
             <a
-              href="#"
+              href="#ppa-2026-591c2d899a5f536bef03"
               className="mt-6 inline-flex items-center justify-center rounded-full bg-white px-7 py-3 text-sm font-extrabold uppercase tracking-wider text-brand-orange shadow-card transition-transform hover:-translate-y-0.5"
             >
               Quero minha vaga
@@ -371,7 +371,7 @@ function Index() {
             especiais de matrícula para 2026.
           </p>
           <a
-            href="#"
+            href="#ppa-2026-591c2d899a5f536bef03"
             className="mt-8 inline-flex items-center justify-center rounded-full bg-white px-8 py-4 text-sm font-extrabold uppercase tracking-wider text-brand-orange shadow-card transition-transform hover:-translate-y-0.5"
           >
             Quero garantir minha vaga
